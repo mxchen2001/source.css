@@ -47,4 +47,16 @@ a.anchor-tertiary {
 }
 a.anchor-tertiary:hover {
   color: #c2c2c2;
+}
+
+.font-size-1 {
+  font-size: 13px;
+}
+
+.font-size-2 {
+  font-size: 16px;
+}
+
+.font-size-3 {
+  font-size: 18px;
 }/*# sourceMappingURL=text.css.map */

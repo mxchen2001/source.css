@@ -32,6 +32,33 @@
         <button class="button-warning">Warning</button>
         <button class="button-success">Success</button>
     </div>
+    <div class="code-block">
+        <!-- <div class="top-bar">
+            <div class="top-bar-element clickable" onclick="toggleCodeBlock('button-block')">
+                <svg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px">
+                    </circle>
+                    <circle cx="34" cy="10" r="8" fill="#FFBD2E" stroke="#DEA123" stroke-width="2px">
+                    </circle>
+                    <circle cx="58" cy="10" r="8" fill="#27C93F" stroke="#1AAB29" stroke-width="2px">
+                    </circle>
+                </svg>
+            </div>
+        </div> -->
+        <pre class="code-block-body">
+            <code class="language-html">
+&ltdiv class="button-container"&gt
+    &ltbutton&gtButton&lt/button&gt
+    &ltbutton class="button-primary"&gtPrimary&lt/button&gt
+    &ltbutton class="button-secondary"&gtSecondary&lt/button&gt
+    &ltbutton class="button-tertiary"&gtTertiary&lt/button&gt
+    &ltbutton class="button-danger"&gtDanger&lt/button&gt
+    &ltbutton class="button-warning"&gtWarning&lt/button&gt
+    &ltbutton class="button-success"&gtSuccess&lt/button&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
 
     <h2>Text</h2>
     <h3>Anchors</h3>
@@ -39,9 +66,16 @@
     <a href="#" class="anchor-primary">Anchor Primary</a>
     <a href="#" class="anchor-secondary">Anchor Secondary</a>
     <a href="#" class="anchor-tertiary">Anchor Tertiary</a>
-    
-    
-    
+    <div class="code-block">
+        <pre class="code-block-body">
+            <code class="language-html">
+&lta href="#"&gtAnchor&lt/a&gt
+&lta href="#" class="anchor-primary"&gtAnchor Primary&lt/a&gt
+&lta href="#" class="anchor-secondary"&gtAnchor Secondary&lt/a&gt
+&lta href="#" class="anchor-tertiary"&gtAnchor Tertiary&lt/a&gt
+            </code>
+        </pre>
+    </div>
 
     <h3>Blockquote</h3>
     <blockquote>
@@ -50,13 +84,61 @@
             Someone famous in <cite title="Source Title">Cited Source Title</cite>
         </footer>
     </blockquote>
-
-
+    <div class="code-block">
+        <pre class="code-block-body">
+            <code class="language-html">
+&ltblockquote&gt
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+    &ltfooter&gt
+        Someone famous in &ltcite title="Source Title"&gtCited Source Title&lt/cite&gt
+    &lt/footer&gt
+&lt/blockquote&gt
+            </code>
+        </pre>
+    </div>
 
     <h2>Code Blocks</h2>
-    <div class="code-block">
+    <h3>Collapsable Code Block</h3>
+    <div class="code-block collapsable collapsed" id="collapsable-block" >
         <div class="top-bar">
-            <div class="top-bar-element">
+            <div class="top-bar-element clickable" onclick="toggleCodeBlock('collapsable-block')">
+                <svg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px">
+                    </circle>
+                    <circle cx="34" cy="10" r="8" fill="#FFBD2E" stroke="#DEA123" stroke-width="2px">
+                    </circle>
+                    <circle cx="58" cy="10" r="8" fill="#27C93F" stroke="#1AAB29" stroke-width="2px">
+                    </circle>
+                </svg>
+            </div>
+        </div>
+        <pre class="code-block-body">
+            <code class="language-html">
+&ltdiv class="code-block collapsable collapsed" id="collapsable-block" &gt
+    &ltdiv class="top-bar"&gt
+        &ltdiv class="top-bar-element clickable" onclick="toggleCodeBlock('collapsable-block')"&gt
+            &ltsvg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltcircle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px"&gt
+                &lt/circle&gt
+                &ltcircle cx="34" cy="10" r="8" fill="#FFBD2E" stroke="#DEA123" stroke-width="2px"&gt
+                &lt/circle&gt
+                &ltcircle cx="58" cy="10" r="8" fill="#27C93F" stroke="#1AAB29" stroke-width="2px"&gt
+                &lt/circle&gt
+            &lt/svg&gt
+        &lt/div&gt
+    &lt/div&gt
+    &ltpre class="code-block-body"&gt
+        &ltcode class="language-html"&gt
+        &lt/code&gt
+    &lt/pre&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
+    <h3>Full Code Block</h3>
+    <div class="code-block collapsable" id="full-code-block">
+        <div class="top-bar">
+            <div class="top-bar-element clickable" onclick="toggleCodeBlock('full-code-block')">
                 <svg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px">
                     </circle>
@@ -70,14 +152,14 @@
                 <div>filename</div>
             </div>
             <div class="top-bar-element">
-                <button onclick="copyToClipboard('full-code-block')">Copy</button>
+                <button onclick="copyToClipboard('full-code-block-body')">Copy</button>
             </div>
         </div>
         <pre class="code-block-body">
-            <code class="language-html" id="full-code-block">
-&ltdiv class="code-block"&gt
+            <code class="language-html" id="full-code-block-body">
+&ltdiv class="code-block collapsable" id="code-block" &gt
     &ltdiv class="top-bar"&gt
-        &ltdiv class="top-bar-element"&gt
+        &ltdiv class="top-bar-element clickable" onclick="toggleCodeBlock('code-block')"&gt
             &ltsvg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt
                 &ltcircle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px"&gt
                 &lt/circle&gt
@@ -102,7 +184,53 @@
             </code>
         </pre>
     </div>
-
+    <h3>Mini Code Block</h3>
+    <h4>Font Size 1</h4>
+    <div class="code-block">
+        <pre class="code-block-body font-size-1">
+            <code class="language-html" id="small-code-block">
+&ltdiv class="code-block"&gt
+    &ltpre class="code-block-body font-size-1"&gt
+        &ltcode class="language-html"&gt
+...
+        &lt/code&gt
+    &lt/pre&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
+    <h4>Font Size 2</h4>
+    <div class="code-block">
+        <pre class="code-block-body font-size-2">
+            <code class="language-html" id="small-code-block">
+&ltdiv class="code-block"&gt
+    &ltpre class="code-block-body font-size-2"&gt
+        &ltcode class="language-html"&gt
+...
+        &lt/code&gt
+    &lt/pre&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
+    <h4>Font Size 3</h4>
+    <div class="code-block">
+        <pre class="code-block-body font-size-3">
+            <code class="language-html" id="small-code-block">
+&ltdiv class="code-block"&gt
+    &ltpre class="code-block-body font-size-3"&gt
+        &ltcode class="language-html"&gt
+    ...
+        &lt/code&gt
+    &lt/pre&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 source.css by <a href="https://www.xigechen.com/">xige</a></p>
+    </footer>
 
 
 </body>

@@ -4,19 +4,23 @@
 }
 
 .code-block {
+    pre {
+        margin: 0;
+    }
+
     font-family: 'sf-mono';
 
     background-color: #151718;
     color: #fff;
-    margin: auto;
+    margin: 1em auto;
     max-width: 60em;
     box-shadow: 0 8px 12px rgba(0,0,0,0.5);
 
     .top-bar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 12px;
-        padding-top: 12px;
+        margin: 0 12px;
+        padding: 12px 0;
         min-height: 12px;
 
         .top-bar-element {
@@ -44,14 +48,37 @@
                 cursor: pointer;
                 font-family: 'sf-mono';
             }
+
+            &.clickable {
+                cursor: pointer;
+            }
         }
     }
 
     .code-block-body {
         background-color: #2b2b2b;
         display: flex;
-        min-height: 5rem;
     }
+
+    &.collapsable {
+        &.collapsed {
+            transition: max-height 0.2s ease-in-out;
+    
+            .code-block-body {
+                display: none;
+                overflow: hidden;
+    
+                max-height: 0;
+            }
+    
+    
+            .show-collapse {
+                // The element that will be shown when the code block is collapsed
+                position: absolute;
+            }
+        }
+    }
+
 
     @import './highlight.scss';
 }
