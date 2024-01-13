@@ -1,0 +1,88 @@
+button {
+  background-color: #2b2b2b;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "sf-mono";
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  background-color: #444;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button:active {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: #666;
+}
+button.button-primary {
+  background-color: #8ec5db;
+  color: #2f2f2f;
+}
+button.button-primary:hover {
+  background-color: #9dd9f0;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-primary:active {
+  background-color: #c2e9f9;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+button.button-secondary {
+  background-color: #444;
+}
+button.button-secondary:hover {
+  background-color: #666;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-secondary:active {
+  background-color: #888;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+button.button-tertiary {
+  background-color: #dbdbdb;
+  color: #2f2f2f;
+}
+button.button-tertiary:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-tertiary:active {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+button.button-danger {
+  background-color: #eb5461;
+}
+button.button-danger:hover {
+  background-color: #e06c75;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-danger:active {
+  background-color: #e78c8f;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+button.button-warning {
+  background-color: #f5cb5c;
+  color: #2f2f2f;
+}
+button.button-warning:hover {
+  background-color: #f5d26c;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-warning:active {
+  background-color: #f5d87c;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+button.button-success {
+  background-color: #98c379;
+  color: #2f2f2f;
+}
+button.button-success:hover {
+  background-color: #a3c97a;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button.button-success:active {
+  background-color: #b3d17a;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1), 0 0px 0px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=button.css.map */

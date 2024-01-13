@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>source.css</title>
+
+    <link rel="stylesheet" href="./style/code.css">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/text.css">
+
+
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./index.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <h1>source.css</h1>
+    <h2>Buttons</h2>
+    <div class="button-container">
+        <button>Button</button>
+        <button class="button-primary">Primary</button>
+        <button class="button-secondary">Secondary</button>
+        <button class="button-tertiary">Tertiary</button>
+        <button class="button-danger">Danger</button>
+        <button class="button-warning">Warning</button>
+        <button class="button-success">Success</button>
+    </div>
+
+    <h2>Text</h2>
+    <h3>Anchors</h3>
+    <a href="#">Anchor</a>
+    <a href="#" class="anchor-primary">Anchor Primary</a>
+    <a href="#" class="anchor-secondary">Anchor Secondary</a>
+    <a href="#" class="anchor-tertiary">Anchor Tertiary</a>
+    
+    
+    
+
+    <h3>Blockquote</h3>
+    <blockquote>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+        <footer>
+            Someone famous in <cite title="Source Title">Cited Source Title</cite>
+        </footer>
+    </blockquote>
+
+
+
+    <h2>Code Blocks</h2>
+    <div class="code-block">
+        <div class="top-bar">
+            <div class="top-bar-element">
+                <svg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px">
+                    </circle>
+                    <circle cx="34" cy="10" r="8" fill="#FFBD2E" stroke="#DEA123" stroke-width="2px">
+                    </circle>
+                    <circle cx="58" cy="10" r="8" fill="#27C93F" stroke="#1AAB29" stroke-width="2px">
+                    </circle>
+                </svg>
+            </div>
+            <div class="top-bar-element">
+                <div>filename</div>
+            </div>
+            <div class="top-bar-element">
+                <button onclick="copyToClipboard('full-code-block')">Copy</button>
+            </div>
+        </div>
+        <pre class="code-block-body">
+            <code class="language-html" id="full-code-block">
+&ltdiv class="code-block"&gt
+    &ltdiv class="top-bar"&gt
+        &ltdiv class="top-bar-element"&gt
+            &ltsvg width="72px" height="20px" viewBox="0 0 72 20" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt
+                &ltcircle cx="12" cy="10" r="8" fill="#FF5F56" stroke="#E0443E" stroke-width="2px"&gt
+                &lt/circle&gt
+                &ltcircle cx="34" cy="10" r="8" fill="#FFBD2E" stroke="#DEA123" stroke-width="2px"&gt
+                &lt/circle&gt
+                &ltcircle cx="58" cy="10" r="8" fill="#27C93F" stroke="#1AAB29" stroke-width="2px"&gt
+                &lt/circle&gt
+            &lt/svg&gt
+        &lt/div&gt
+        &ltdiv class="top-bar-element"&gt
+            &ltdiv&gtfilename&lt/div&gt
+        &lt/div&gt
+        &ltdiv class="top-bar-element"&gt
+            &ltbutton class="copy-button" onclick="copyToClipboard('copy-id')"&gtCopy&lt/button&gt
+        &lt/div&gt
+    &lt/div&gt
+    &ltpre class="code-block-body"&gt
+        &ltcode class="language-py" id="copy-id"&gt
+        &lt/code&gt
+    &lt/pre&gt
+&lt/div&gt
+            </code>
+        </pre>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'sf-mono';
+    src: url('../font/sf-mono/SFMonoRegular.otf') format('opentype');
+}
+
+.code-block {
+    font-family: 'sf-mono';
+
+    background-color: #151718;
+    color: #fff;
+    margin: auto;
+    max-width: 60em;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+
+    .top-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 12px;
+        padding-top: 12px;
+        min-height: 12px;
+
+        .top-bar-element {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(1) {
+                justify-content: left;
+            }
+
+            &:nth-child(2) {
+                justify-content: center;
+            }
+
+            &:nth-child(3) {
+                justify-content: right;
+            }
+
+            button.copy-button {
+                background-color: #2b2b2b;
+                border: none;
+                color: #fff;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: 'sf-mono';
+            }
+        }
+    }
+
+    .code-block-body {
+        background-color: #2b2b2b;
+        display: flex;
+        min-height: 5rem;
+    }
+
+    @import './highlight.scss';
+}
