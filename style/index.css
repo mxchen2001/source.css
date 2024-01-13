@@ -4,4 +4,19 @@ body {
   color: #fff;
   margin: auto;
   max-width: 60em;
+  padding: 1em;
 }/*# sourceMappingURL=index.css.map */
+
+
+.button-container {
+  display: grid;
+  gap: 1em;
+
+  grid-template-columns: repeat(8, 1fr);
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+}
